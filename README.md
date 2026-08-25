@@ -14,6 +14,7 @@ A browser-based 3D-style dungeon action game built with Three.js.
 - Dungeon objective and progress HUD
 - Particle effects and combat feedback
 - Responsive desktop/mobile HUD
+- Mobile touch movement controls
 - Runs as a static website; Three.js is loaded from a CDN
 
 ## Run
