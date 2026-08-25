@@ -9,14 +9,14 @@
 <body>
   <div id="boot"><div class="logo">SHADOW <span>ASCENSION</span></div><div class="loader"><i></i></div><p>Awakening the Shadow Realm…</p></div>
   <div id="hud" class="hidden">
-    <div class="topbar"><div class="player-card"><div class="avatar">S</div><div><b id="level">LV 1</b><div class="bar hp"><i id="hpBar"></i></div><small id="hpText">140 / 140</small></div></div><div class="boss-card hidden" id="bossCard"><b id="bossName">DREAD LORD</b><div class="bar boss"><i id="bossBar"></i></div></div><div class="quest">DUNGEON <strong id="floor">01</strong><small id="objective">Clear the shadows</small></div></div>
+    <div class="topbar"><div class="player-card"><div class="avatar">S</div><div><b id="level">LV 1</b><div class="bar hp"><i id="hpBar"></i></div><small id="hpText">100 / 100</small></div></div><div class="quest">DUNGEON <strong id="floor">01</strong><small id="objective">Defeat the shadows</small></div></div>
     <div id="toast"></div>
-    <div class="bottom"><div class="skills"><button data-skill="slash">⚔<span>Slash</span><kbd>Q</kbd></button><button data-skill="burst">✦<span>Shadow Burst</span><kbd>E</kbd></button><button data-skill="dash">➤<span>Shadow Step</span><kbd>R</kbd></button></div><div class="xp"><span>XP</span><div class="bar"><i id="xpBar"></i></div><small id="xpText">0 / 100</small></div></div>
     <div id="centerPrompt">CLICK TO ATTACK</div><div id="crosshair">+</div>
   </div>
-  <div id="menu" class="overlay"><div class="panel"><div class="eyebrow">THE GATE HAS OPENED</div><h1>SHADOW<br><span>ASCENSION</span></h1><p>Enter a dark 3D dungeon. Hunt shadows, unlock stronger abilities, defeat floor bosses and ascend.</p><button id="start">ENTER DUNGEON</button><div class="tips">WASD / TOUCH MOVE · MOUSE LOOK · CLICK ATTACK · Q E R SKILLS</div></div></div>
-  <div id="gameover" class="overlay hidden"><div class="panel"><div class="eyebrow">AWAKENING FAILED</div><h2 id="resultTitle">THE SHADOWS PREVAILED</h2><p id="resultText"></p><button id="restart">RETRY DUNGEON</button></div></div>
+  <div id="menu" class="overlay"><div class="panel"><div class="eyebrow">THE GATE HAS OPENED</div><h1>SHADOW<br><span>ASCENSION</span></h1><p>A third-person 3D dungeon with an animated warrior, real movement, sword combat and shadow enemies.</p><button id="start">ENTER DUNGEON</button><div class="tips">WASD Move · Mouse Look · Click Sword Attack · Touch Controls</div></div></div>
+  <div id="gameover" class="overlay hidden"><div class="panel"><div class="eyebrow">AWAKENING FAILED</div><h2>THE SHADOWS PREVAILED</h2><p id="resultText"></p><button id="restart">RETRY DUNGEON</button></div></div>
   <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
-  <script src="game-v2.js"></script>
+  <script src="https://threejs.org/examples/jsm/loaders/GLTFLoader.js"></script>
+  <script src="game-v3.js"></script>
 </body>
 </html>
