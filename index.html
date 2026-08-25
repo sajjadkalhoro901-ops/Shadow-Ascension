@@ -2,7 +2,23 @@
 <html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Shadow Ascension</title><link rel="stylesheet" href="style.css"></head>
 <body>
-<div id="hud" class="hidden"><div class="topbar"><div class="player-card"><div class="avatar">S</div><div><b id="level">LV 1</b><div class="bar hp"><i id="hpBar"></i></div><small id="hpText">100 / 100</small></div></div><div class="quest">DUNGEON <strong id="floor">01</strong><small>Defeat the shadows</small></div></div><div id="toast"></div><div id="centerPrompt">MOVE • LOOK • ATTACK</div><div id="crosshair">+</div></div>
-<div id="menu" class="overlay"><div class="panel"><div class="eyebrow">THE GATE HAS OPENED</div><h1>SHADOW<br><span>ASCENSION</span></h1><p>Enter a third-person shadow dungeon. Move, look around, fight enemies and clear the floor.</p><button id="start">ENTER DUNGEON</button><div class="tips">WASD Move · Mouse/Touch Look · Click/⚔ Attack</div></div></div>
-<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script><script src="game-v5.js"></script>
+<div id="hud" class="hidden">
+  <div class="topbar">
+    <div class="player-card">
+      <div class="avatar"><span>S</span></div>
+      <div class="player-stats"><b id="level">LV. 1</b><div class="bar hp"><i id="hpBar"></i></div><small id="hpText">100 / 100</small><div class="bar mana"><i></i></div></div>
+    </div>
+    <div class="dungeon-title"><small>DUNGEON</small><strong>01</strong><span>DEFEAT THE SHADOWS</span></div>
+    <div class="resources"><span>◆ <b>0</b></span><span>◉ <b>0</b></span><button>⚙</button></div>
+  </div>
+  <div class="boss-card"><b>SHADOW SLAYER</b><div class="bar boss"><i></i></div></div>
+  <div class="quest-card"><small>MAIN QUEST</small><b>Defeat all enemies</b><span>□ 0 / 8</span></div>
+  <div class="minimap"><div class="map-grid"></div><i class="player-dot"></i><i class="enemy-dot e1"></i><i class="enemy-dot e2"></i><i class="enemy-dot e3"></i><span>N</span></div>
+  <div class="xp"><small>EXP 0 / 100</small><div class="bar"><i></i></div></div>
+  <div class="skills"><button id="skillSlash"><b>✦</b><span>SHADOW<br>SLASH</span></button><button id="skillDash"><b>➤</b><span>DASH</span></button><button id="skillBurst"><b>✧</b><span>SHADOW<br>BURST</span></button></div>
+  <div id="toast"></div><div id="centerPrompt">CLICK / ⚔ TO ATTACK</div><div id="crosshair">+</div>
+</div>
+<div id="menu" class="overlay"><div class="panel"><div class="eyebrow">THE GATE HAS OPENED</div><h1>SHADOW<br><span>ASCENSION</span></h1><p>Enter the shadow dungeon. Defeat the soldiers, grow stronger and ascend through the floors.</p><button id="start">ENTER DUNGEON</button><div class="tips">WASD / Joystick · Drag to look · Click / ⚔ Attack</div></div></div>
+<button id="restart" class="hidden" aria-hidden="true"></button>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script><script src="game-v6.js"></script>
 </body></html>
